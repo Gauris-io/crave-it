@@ -8,6 +8,8 @@ import Categories from "./pages/Categories";
 import FlavourSelection from "./pages/FlavourSelection";
 import ResultPage from "./pages/ResultPage";
 import CloudKitchen from "./pages/CloudKitchen";
+import CookIt from "./pages/CookIt";
+import BabyForm from "./pages/BabyForm";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +26,8 @@ const App = () => (
           <Route path="/flavours" element={<FlavourSelection />} />
           <Route path="/result" element={<ResultPage />} />
           <Route path="/cloud-kitchen" element={<CloudKitchen />} />
+          <Route path="/cook-it" element={<CookIt />} />
+          <Route path="/baby-form" element={<BabyForm />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

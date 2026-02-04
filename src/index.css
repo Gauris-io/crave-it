@@ -2,116 +2,115 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Crave-it! Design System - Warm, Cozy, Ghibli-inspired */
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;500;600;700&display=swap');
+/* Crave-it! Design System - Professional Retro Game UI + Cozy Ghibli Style */
 
 @layer base {
   :root {
-    /* Primary Colors - Warm Terracotta */
-    --background: 38 100% 97%;
-    --foreground: 15 45% 20%;
+    /* Main Palette */
+    --background: 42 100% 95%; /* Cream/Off-white #FFF8E7 */
+    --foreground: 16 33% 29%; /* Soft Brown #5D4037 */
 
-    /* Cream/Vanilla base */
-    --card: 40 100% 96%;
-    --card-foreground: 15 45% 20%;
+    /* Card - slightly warmer cream */
+    --card: 40 100% 97%;
+    --card-foreground: 16 33% 29%;
 
-    --popover: 40 100% 96%;
-    --popover-foreground: 15 45% 20%;
+    --popover: 40 100% 97%;
+    --popover-foreground: 16 33% 29%;
 
-    /* Terracotta Primary */
-    --primary: 10 55% 51%;
-    --primary-foreground: 40 100% 96%;
+    /* Primary - Warm Terracotta #D97C56 */
+    --primary: 16 62% 59%;
+    --primary-foreground: 42 100% 95%;
 
-    /* Soft Blush Secondary */
-    --secondary: 15 68% 82%;
-    --secondary-foreground: 15 45% 20%;
+    /* Secondary - Lighter terracotta */
+    --secondary: 16 50% 75%;
+    --secondary-foreground: 16 33% 29%;
 
     /* Muted - Light Cream */
-    --muted: 35 40% 90%;
-    --muted-foreground: 15 20% 45%;
+    --muted: 40 40% 90%;
+    --muted-foreground: 16 20% 50%;
 
-    /* Honey Gold Accent */
-    --accent: 38 88% 66%;
-    --accent-foreground: 15 45% 20%;
+    /* Accent - Sage Green #8DA399 */
+    --accent: 150 15% 60%;
+    --accent-foreground: 16 33% 29%;
 
-    /* Sage Green */
-    --sage: 130 20% 67%;
-    --sage-foreground: 130 30% 20%;
+    /* Sage Green for badges/accents */
+    --sage: 150 15% 60%;
+    --sage-foreground: 150 30% 20%;
 
-    /* Cocoa Brown */
-    --cocoa: 15 40% 25%;
-    --cocoa-foreground: 40 100% 96%;
+    /* Cocoa Brown for borders/text */
+    --cocoa: 16 33% 29%;
+    --cocoa-foreground: 42 100% 95%;
 
-    /* Chili Red */
+    /* Chili Red for spicy indicators */
     --chili: 4 65% 46%;
-    --chili-foreground: 40 100% 96%;
+    --chili-foreground: 42 100% 95%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 30 30% 85%;
-    --input: 30 30% 85%;
-    --ring: 10 55% 51%;
+    --border: 16 33% 29%; /* Brown border for retro game look */
+    --input: 40 30% 85%;
+    --ring: 16 62% 59%;
 
     --radius: 1rem;
 
     /* Custom shadows */
-    --shadow-soft: 0 4px 20px -4px hsl(15 45% 20% / 0.1);
-    --shadow-warm: 0 8px 30px -8px hsl(10 55% 51% / 0.2);
-    --shadow-glow: 0 0 40px hsl(38 88% 66% / 0.3);
+    --shadow-soft: 0 4px 12px -2px hsl(16 33% 29% / 0.1);
+    --shadow-warm: 0 6px 20px -4px hsl(16 62% 59% / 0.25);
+    --shadow-glow: 0 0 20px hsl(16 62% 59% / 0.3);
+    --shadow-retro: 4px 4px 0px hsl(16 33% 29%);
 
     /* Gradients */
-    --gradient-warm: linear-gradient(135deg, hsl(10 55% 51%) 0%, hsl(15 68% 72%) 100%);
-    --gradient-cream: linear-gradient(180deg, hsl(40 100% 96%) 0%, hsl(38 100% 94%) 100%);
-    --gradient-sunset: linear-gradient(135deg, hsl(38 88% 66%) 0%, hsl(10 55% 51%) 100%);
+    --gradient-warm: linear-gradient(135deg, hsl(16 62% 59%) 0%, hsl(16 50% 70%) 100%);
+    --gradient-cream: linear-gradient(180deg, hsl(42 100% 95%) 0%, hsl(40 80% 92%) 100%);
 
-    --sidebar-background: 38 100% 97%;
-    --sidebar-foreground: 15 45% 20%;
-    --sidebar-primary: 10 55% 51%;
-    --sidebar-primary-foreground: 40 100% 96%;
-    --sidebar-accent: 38 88% 66%;
-    --sidebar-accent-foreground: 15 45% 20%;
-    --sidebar-border: 30 30% 85%;
-    --sidebar-ring: 10 55% 51%;
+    --sidebar-background: 42 100% 95%;
+    --sidebar-foreground: 16 33% 29%;
+    --sidebar-primary: 16 62% 59%;
+    --sidebar-primary-foreground: 42 100% 95%;
+    --sidebar-accent: 150 15% 60%;
+    --sidebar-accent-foreground: 16 33% 29%;
+    --sidebar-border: 16 33% 29%;
+    --sidebar-ring: 16 62% 59%;
   }
 
   .dark {
-    --background: 15 30% 8%;
-    --foreground: 40 100% 96%;
+    --background: 16 30% 10%;
+    --foreground: 42 100% 95%;
 
-    --card: 15 25% 12%;
-    --card-foreground: 40 100% 96%;
+    --card: 16 25% 14%;
+    --card-foreground: 42 100% 95%;
 
-    --popover: 15 25% 12%;
-    --popover-foreground: 40 100% 96%;
+    --popover: 16 25% 14%;
+    --popover-foreground: 42 100% 95%;
 
-    --primary: 10 55% 55%;
-    --primary-foreground: 15 30% 8%;
+    --primary: 16 62% 55%;
+    --primary-foreground: 16 30% 10%;
 
-    --secondary: 15 40% 25%;
-    --secondary-foreground: 40 100% 96%;
+    --secondary: 16 40% 25%;
+    --secondary-foreground: 42 100% 95%;
 
-    --muted: 15 20% 18%;
-    --muted-foreground: 30 20% 60%;
+    --muted: 16 20% 20%;
+    --muted-foreground: 40 20% 60%;
 
-    --accent: 38 88% 60%;
-    --accent-foreground: 15 30% 8%;
+    --accent: 150 15% 50%;
+    --accent-foreground: 16 30% 10%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 15 20% 20%;
-    --input: 15 20% 20%;
-    --ring: 10 55% 55%;
+    --border: 16 20% 25%;
+    --input: 16 20% 25%;
+    --ring: 16 62% 55%;
 
-    --sidebar-background: 15 25% 10%;
-    --sidebar-foreground: 40 100% 96%;
-    --sidebar-primary: 10 55% 55%;
-    --sidebar-primary-foreground: 15 30% 8%;
-    --sidebar-accent: 38 88% 60%;
-    --sidebar-accent-foreground: 15 30% 8%;
-    --sidebar-border: 15 20% 20%;
-    --sidebar-ring: 10 55% 55%;
+    --sidebar-background: 16 25% 12%;
+    --sidebar-foreground: 42 100% 95%;
+    --sidebar-primary: 16 62% 55%;
+    --sidebar-primary-foreground: 16 30% 10%;
+    --sidebar-accent: 150 15% 50%;
+    --sidebar-accent-foreground: 16 30% 10%;
+    --sidebar-border: 16 20% 25%;
+    --sidebar-ring: 16 62% 55%;
   }
 }
 
@@ -127,40 +126,105 @@
   h1, h2, h3, h4, h5, h6 {
     @apply font-display;
   }
+
+  /* Custom Scrollbar - Retro Game Style */
+  ::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+    border: 2px solid hsl(var(--cocoa));
+    border-radius: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary));
+    border: 2px solid hsl(var(--cocoa));
+    border-radius: 6px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary) / 0.8);
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: hsl(var(--muted));
+  }
 }
 
 @layer components {
-  /* Cozy Card Styles */
-  .card-cozy {
-    @apply rounded-2xl bg-card p-6 transition-all duration-300;
+  /* Retro Game Card Style */
+  .card-retro {
+    @apply rounded-2xl bg-card p-5 transition-all duration-200;
+    border: 2px solid hsl(var(--cocoa));
     box-shadow: var(--shadow-soft);
   }
 
-  .card-cozy:hover {
+  .card-retro:hover {
     box-shadow: var(--shadow-warm);
-    transform: translateY(-4px);
+    transform: translateY(-2px);
+  }
+
+  /* Chunky Retro Button */
+  .btn-retro {
+    @apply rounded-xl px-6 py-3 font-body font-semibold transition-all duration-150;
+    border: 2px solid hsl(var(--cocoa));
+    box-shadow: 3px 3px 0px hsl(var(--cocoa));
+  }
+
+  .btn-retro:hover {
+    box-shadow: 2px 2px 0px hsl(var(--cocoa));
+    transform: translate(1px, 1px);
+  }
+
+  .btn-retro:active {
+    box-shadow: 0px 0px 0px hsl(var(--cocoa));
+    transform: translate(3px, 3px);
   }
 
   /* Steam Animation */
   @keyframes steam {
     0% {
       opacity: 0;
-      transform: translateY(0) scale(1);
+      transform: translateY(0) scaleX(1);
+    }
+    15% {
+      opacity: 0.8;
     }
     50% {
-      opacity: 0.6;
+      opacity: 0.4;
+      transform: translateY(-20px) scaleX(1.2);
     }
     100% {
       opacity: 0;
-      transform: translateY(-40px) scale(1.5);
+      transform: translateY(-40px) scaleX(0.8);
     }
   }
 
   .steam-particle {
-    animation: steam 3s ease-out infinite;
+    animation: steam 2.5s ease-out infinite;
   }
 
-  /* Glow effect for selected items */
+  /* Flavor Pill Button */
+  .pill-flavor {
+    @apply rounded-full px-5 py-2.5 font-body font-semibold text-sm transition-all duration-200;
+    border: 2px solid hsl(var(--cocoa));
+    background: hsl(var(--card));
+  }
+
+  .pill-flavor:hover {
+    background: hsl(var(--secondary));
+  }
+
+  .pill-flavor.selected {
+    background: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+    box-shadow: 0 0 12px hsl(var(--primary) / 0.4);
+  }
+
+  /* Glow effect */
   .glow-warm {
     box-shadow: var(--shadow-glow);
   }
@@ -171,41 +235,64 @@
   }
 
   .btn-squishy:active {
-    transform: scale(0.95);
+    transform: scale(0.96);
   }
 
-  /* Paper texture overlay */
-  .paper-texture {
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-    opacity: 0.03;
+  /* Badge styles */
+  .badge-sage {
+    @apply inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-semibold;
+    background: hsl(var(--sage) / 0.2);
+    color: hsl(var(--sage-foreground));
+    border: 1px solid hsl(var(--sage));
   }
 
-  /* Wooden shelf scroll */
-  .scroll-wooden {
-    @apply relative;
+  .badge-who {
+    @apply inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-bold;
+    background: hsl(var(--accent));
+    color: hsl(var(--accent-foreground));
+    border: 2px solid hsl(var(--cocoa));
   }
 
-  .scroll-wooden::before,
-  .scroll-wooden::after {
-    content: '';
-    @apply absolute top-0 bottom-0 w-8 z-10;
-    background: linear-gradient(90deg, hsl(var(--background)) 0%, transparent 100%);
+  /* Recipe card flip container */
+  .card-flip {
+    perspective: 1000px;
   }
 
-  .scroll-wooden::after {
-    @apply right-0 left-auto;
-    background: linear-gradient(-90deg, hsl(var(--background)) 0%, transparent 100%);
+  .card-flip-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+
+  .card-flip:hover .card-flip-inner {
+    transform: rotateY(180deg);
+  }
+
+  .card-flip-front,
+  .card-flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+  }
+
+  .card-flip-back {
+    transform: rotateY(180deg);
   }
 }
 
 @layer utilities {
   /* Font utilities */
   .font-display {
-    font-family: 'Pacifico', cursive;
+    font-family: 'Fraunces', serif;
+    font-optical-sizing: auto;
   }
 
   .font-body {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Quicksand', sans-serif;
   }
 
   /* Gradient backgrounds */
@@ -217,20 +304,13 @@
     background: var(--gradient-cream);
   }
 
-  .bg-gradient-sunset {
-    background: var(--gradient-sunset);
-  }
-
-  /* Text gradients */
-  .text-gradient-warm {
-    background: var(--gradient-warm);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-
   /* Soft focus states */
   .focus-warm:focus {
     @apply outline-none ring-2 ring-primary/50 ring-offset-2 ring-offset-background;
+  }
+
+  /* Retro border utility */
+  .border-retro {
+    border: 2px solid hsl(var(--cocoa));
   }
 }
