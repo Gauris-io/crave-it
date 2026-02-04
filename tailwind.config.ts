@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ["Pacifico", "cursive"],
-        body: ["Nunito", "sans-serif"],
+        display: ["Fraunces", "serif"],
+        body: ["Quicksand", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -86,6 +86,7 @@ export default {
         soft: "var(--shadow-soft)",
         warm: "var(--shadow-warm)",
         glow: "var(--shadow-glow)",
+        retro: "var(--shadow-retro)",
       },
       keyframes: {
         "accordion-down": {
@@ -113,9 +114,17 @@ export default {
           "0%": { opacity: "0", transform: "scale(0.9)" },
           "100%": { opacity: "1", transform: "scale(1)" },
         },
+        "slide-in-right": {
+          "0%": { opacity: "0", transform: "translateX(40px)" },
+          "100%": { opacity: "1", transform: "translateX(0)" },
+        },
         shimmer: {
           "0%": { backgroundPosition: "-200% 0" },
           "100%": { backgroundPosition: "200% 0" },
+        },
+        wiggle: {
+          "0%, 100%": { transform: "rotate(-3deg)" },
+          "50%": { transform: "rotate(3deg)" },
         },
       },
       animation: {
@@ -125,7 +134,9 @@ export default {
         "gentle-bounce": "gentle-bounce 2s ease-in-out infinite",
         "fade-in-up": "fade-in-up 0.6s ease-out",
         "scale-in": "scale-in 0.5s ease-out",
+        "slide-in-right": "slide-in-right 0.5s ease-out",
         shimmer: "shimmer 2s linear infinite",
+        wiggle: "wiggle 0.3s ease-in-out",
       },
     },
   },
