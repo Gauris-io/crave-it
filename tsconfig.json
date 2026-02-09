@@ -1,4 +1,4 @@
-{
+{/* TypeScript configuration for the project */
   "files": [],
   "references": [{ "path": "./tsconfig.app.json" }, { "path": "./tsconfig.node.json" }],
   "compilerOptions": {
