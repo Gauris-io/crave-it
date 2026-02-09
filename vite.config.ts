@@ -12,6 +12,7 @@ export default defineConfig(({ mode }) => ({
       overlay: false,
     },
   },
+  // Plugins for the vite build process
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
     alias: {
