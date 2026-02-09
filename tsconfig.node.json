@@ -1,4 +1,4 @@
-{
+{ /* TypeScript configuration for the node environment */
   "compilerOptions": {
     "target": "ES2022",
     "lib": ["ES2023"],
