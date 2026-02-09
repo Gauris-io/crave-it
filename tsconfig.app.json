@@ -1,4 +1,4 @@
-{
+{  /* TypeScript configuration for the application */
   "compilerOptions": {
     "types": ["vitest/globals"],
     "target": "ES2020",
