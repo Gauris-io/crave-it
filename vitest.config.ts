@@ -1,6 +1,7 @@
 import { defineConfig } from "vitest/config";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
+// vitest configuration for the project 
 
 export default defineConfig({
   plugins: [react()],
