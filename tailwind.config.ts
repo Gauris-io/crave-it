@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+// Tailwind CSS configuration for Crave-it UI theme
 
 export default {
   darkMode: ["class"],
